@@ -12,7 +12,6 @@ import kafka.serializer.StringDecoder;
 public class StartOld implements StartWithTopicInterface {
 	@Override
 	public void start(List<String> topicList) {
-		// TODO Auto-generated method stub
 		for (String topic : topicList) {
 			ConsumerEngine<String, String> ce = new ConsumerEngine<String, String>(topic,
 					Integer.parseInt(ConsumerInit.PARTITION_STATEGY));

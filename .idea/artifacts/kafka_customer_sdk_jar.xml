@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="kafka-customer-sdk:jar">
+  <artifact type="jar" name="kafka-customer-sdk:jar">
     <output-path>$PROJECT_DIR$/classes/artifacts/kafka_customer_sdk_jar</output-path>
     <root id="archive" name="kafka-customer-sdk.jar">
       <element id="module-output" name="kafka-customer-sdk" />

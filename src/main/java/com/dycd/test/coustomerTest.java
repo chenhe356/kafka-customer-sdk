@@ -18,12 +18,6 @@ import java.util.List;
  **/
 public class coustomerTest {
     public static void main(String[] args) {
-//        MessageHandler handler = new DefaultMessageHandlerImpl();
-//        MessageHandler handler = new handlecallBack();
-//        StartWithThreadTopic startWithTopic = new StartWithThreadTopic();
-//        List<String> topic = new ArrayList<>();
-//        topic.add("fuck");
-//        startWithTopic.start(topic);
         MessageHandler handler = new handlecallBack();
         StartWithTopic startWithThreadPartition = new StartWithTopic(handler);
         List<String> list = new ArrayList<>();
