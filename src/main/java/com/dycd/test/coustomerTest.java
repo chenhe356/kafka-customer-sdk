@@ -21,7 +21,7 @@ public class coustomerTest {
         MessageHandler handler = new handlecallBack();
         StartWithTopic startWithThreadPartition = new StartWithTopic(handler);
         List<String> list = new ArrayList<>();
-        list.add("fuck");
+        list.add("test_fuck");
         startWithThreadPartition.start(list);
     }
 }

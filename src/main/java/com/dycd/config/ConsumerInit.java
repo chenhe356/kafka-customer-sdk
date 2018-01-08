@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import com.dycd.consts.ConsumerConsts;
-import com.dycd.kafka_sdk.consts.ProducerConsts;
+import org.ems.utils.PropertiesFileInit;
 
 public class ConsumerInit {
 	
@@ -29,7 +29,7 @@ public class ConsumerInit {
 	public static Long POLL_TIMEOUT;
 	
 	static{
-		com.dycd.kafka_sdk.utils.PropertiesFileInit property = new com.dycd.kafka_sdk.utils.PropertiesFileInit();
+		PropertiesFileInit property = new PropertiesFileInit();
 		InputStream in = ConsumerInit.class.getResourceAsStream(ConsumerConsts.CONSUMER_CONFIG_FILE_PATH);
 		try {
 			CONSUMER_PROP = property.loadProperties(in);
